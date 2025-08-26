@@ -33,13 +33,6 @@ This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a
 ```bash
 git clone https://github.com/<your-username>/dropbox-api-client.git
 cd dropbox-api-client
-
-
-### 2️⃣ Configure Dropbox App
-
-Update `DropboxApp.java` with your Dropbox App credentials:
-
-```java
 DropBoxConfig config = new DropBoxConfig(
         "YOUR_CLIENT_ID",
         "YOUR_CLIENT_SECRET",
