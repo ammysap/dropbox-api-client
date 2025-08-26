@@ -1,13 +1,13 @@
 ```markdown
 # 📦 Dropbox API Client
 
-A simple **Dropbox API Client** implemented in **Java** using **Maven**, following clean **Object-Oriented Principles (OOP)**.  
+A simple Dropbox API Client implemented in **Java** using Maven.  
 This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a modular and reusable way.
 
 ---
 
 ## ✨ Features
-- 🔑 **OAuth 2.0 Authorization** with Dropbox
+- 🔑 OAuth 2.0 Authorization** with Dropbox
 - 🔐 Exchange **Authorization Code** for **Access Token**
 - 👥 Example API Call: **List Team Members**
 - 🧩 **OOP-based Restructure**:
