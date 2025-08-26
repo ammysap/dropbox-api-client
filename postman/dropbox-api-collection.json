@@ -1,0 +1,229 @@
+{
+  "info": {
+    "_postman_id": "8ffc45ce-6ed9-4d99-b3cb-f724686aea9b",
+    "name": "Dropbox Business – OAuth2 + Core Admin APIs",
+    "description": "Collection for OAuth2 (Authorization Code) and key Dropbox Business APIs.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "18351726"
+  },
+  "item": [
+    {
+      "name": "Team – get_info",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base}}/team/get_info",
+          "host": ["{{base}}"],
+          "path": ["team", "get_info"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Team – members/list_v2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"limit\": 100\n}"
+        },
+        "url": {
+          "raw": "{{base}}/team/members/list_v2",
+          "host": ["{{base}}"],
+          "path": ["team", "members", "list_v2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Team Log – get_events",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"category\": \"groups\",\n    \"limit\": 50\n}"
+        },
+        "url": {
+          "raw": "{{base}}/team_log/get_events",
+          "host": ["{{base}}"],
+          "path": ["team_log", "get_events"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Team Log – get_events/continue",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cursor\":\"AAE5jh42Bt0QeBICaRycXtkzE-BIk3-M_tT6GWJiRGQPvNKeCFH3VcJxYa1sSW0Js59qnn8QpRrRXBdGPehyXju7jTD3kgkqldrQ-0QUrSWNcCvA61r7fTMOb32bd69NxJ5MAaZC3fOimJm_AHHaj-yw_MAWMvkXl9WYIl6nV0aCcWITPdyP1fK1byk7ZI_IVLMqUKnl_H__jndbInYgp46vsd_yz5dlyf0KTJ3Wsp86ULhNjctzCJRFuX6Y6F-CF54FG6OUWZobHsryZgGawA01Qn9TUi8jMT5wx604-cdueVZ6JPjyyanCzsIplRpGLWF8Die6cVbmGuxp7UI98zg8h3ydao3d9FTnvr2_8tny3_8tWMKjiMQXiDF7iazAga0hjNDL0xQADoJlhTFjV-2X\"\n}"
+        },
+        "url": {
+          "raw": "{{base}}/team_log/get_events/continue",
+          "host": ["{{base}}"],
+          "path": ["team_log", "get_events", "continue"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      },
+      {
+        "key": "authRequestParams",
+        "value": [],
+        "type": "any"
+      },
+      {
+        "key": "refreshTokenUrl",
+        "value": "{{refesh_token_url}}",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "8empo1rw3lo9m1f",
+        "type": "string"
+      },
+      {
+        "key": "clientId",
+        "value": "vzkz0gl6iii4pad",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "{{token_url}}",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "{{auth_url}}",
+        "type": "string"
+      },
+      {
+        "key": "redirect_uri",
+        "value": "{{redirect_uri}}",
+        "type": "string"
+      },
+      {
+        "key": "scope",
+        "value": "{{scope}}",
+        "type": "string"
+      },
+      {
+        "key": "tokenName",
+        "value": "Dropbox OAuth2 Token",
+        "type": "string"
+      },
+      {
+        "key": "client_authentication",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_url",
+      "value": "https://www.dropbox.com/oauth2/authorize?token_access_type=offline"
+    },
+    {
+      "key": "token_url",
+      "value": "https://api.dropboxapi.com/oauth2/token"
+    },
+    {
+      "key": "redirect_uri",
+      "value": "https://oauth.pstmn.io/v1/callback"
+    },
+    {
+      "key": "scope",
+      "value": "team_info.read members.read events.read"
+    },
+    {
+      "key": "base",
+      "value": "https://api.dropboxapi.com/2"
+    },
+    {
+      "key": "access_token",
+      "value": ""
+    },
+    {
+      "key": "refesh_token_url",
+      "value": "https://api.dropboxapi.com/oauth2/token"
+    }
+  ]
+}

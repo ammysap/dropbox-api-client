@@ -1,5 +1,5 @@
 ````markdown
-# 📦 Dropbox API Client
+# 📦 Dropbox API Client Assignement with Cloudeagle
 
 A simple Dropbox API Client implemented in Java using Maven.  
 This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a modular and reusable way.
@@ -114,5 +114,27 @@ classDiagram
     DropboxApiService <.. DropboxApp
 
 ```
+
+---
+
+## 🧰 Postman Collection
+
+I have included a Postman Collection with all Dropbox API requests used in this project.
+
+📂 [Download the Collection](./postman/dropbox-api-collection.json)
+
+### 🔌 Import into Postman
+
+1. Open Postman.
+2. Click Import.
+3. Select the file: `postman/dropbox-api-collection.json`.
+4. Use the same credentials (`client_id`, `client_secret`, `redirect_uri`) you configured in the code.
+
+This will allow test for:
+
+- ✅ Auth Request (Get Authorization URL)
+- ✅ Token Request (Exchange code for token)
+- ✅ Refresh Token Request
+- ✅ Example API (List Team Members) and other given in the assignment.
 
 ---
