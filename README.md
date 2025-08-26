@@ -1,24 +1,26 @@
-```markdown
+````markdown
 # 📦 Dropbox API Client
 
-A simple Dropbox API Client implemented in **Java** using Maven.  
+A simple Dropbox API Client implemented in Java using Maven.  
 This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a modular and reusable way.
 
 ---
 
 ## ✨ Features
-- 🔑 OAuth 2.0 Authorization** with Dropbox
-- 🔐 Exchange **Authorization Code** for **Access Token**
-- 👥 Example API Call: **List Team Members**
-- 🧩 **OOP-based Restructure**:
-  - **`DropBoxConfig`** → Holds Dropbox App credentials (Client ID, Secret, Redirect URI)
-  - **`DropboxAuthService`** → Manages authentication flows (Authorization URL, Token Exchange)
-  - **`DropboxApiService`** → Handles API requests (e.g., List team members)
-  - **`DropboxApp`** → Main class (entry point), orchestrates the flow
+
+- 🔑 OAuth 2.0 Authorization with Dropbox
+- 🔐 Exchange Authorization Code for Access Token
+- 👥 Example API Call: List Team Members
+- 🧩 OOP-based Restructure:
+  - `DropBoxConfig` → Holds Dropbox App credentials (Client ID, Secret, Redirect URI)
+  - `DropboxAuthService` → Manages authentication flows (Authorization URL, Token Exchange)
+  - `DropboxApiService` → Handles API requests (e.g., List team members)
+  - `DropboxApp` → Main class (entry point), orchestrates the flow
 
 ---
 
 ## ⚙️ Prerequisites
+
 - ☕ Java 17+ (recommended)
 - 🛠️ Maven 3.9+
 - 🌐 A Dropbox App (from [Dropbox Developer Console](https://www.dropbox.com/developers))
@@ -28,14 +30,16 @@ This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a
 ## 🚀 Setup & Run
 
 ### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/<your-username>/dropbox-api-client.git
 cd dropbox-api-client
+```
 ````
 
 ### 2️⃣ Configure Dropbox App
 
-Update `DropboxApp.java` with your **Dropbox App credentials**:
+Update `DropboxApp.java` with your Dropbox App credentials:
 
 ```java
 DropBoxConfig config = new DropBoxConfig(
@@ -63,12 +67,12 @@ mvn exec:java
 
 ## 🖥️ Usage Flow
 
-1. Run the app → it will print an **Authorization URL**.
+1. Run the app → it will print an Authorization URL.
 2. Open the URL in your browser → log in & authorize the app.
-3. Copy the **Authorization Code** and paste it back into the terminal.
-4. The app will fetch your **Access Token** and call a **Dropbox API endpoint**.
+3. Copy the Authorization Code and paste it back into the terminal.
+4. The app will fetch your Access Token and call a Dropbox API endpoint.
 
-**Example Output:**
+Example Output:
 
 ```
 Visit this URL and authorize:
