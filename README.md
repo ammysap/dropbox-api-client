@@ -1,5 +1,4 @@
-````markdown
-# 📦 Dropbox API Client Assignement with Cloudeagle
+# 📦 Dropbox API Client Assignment with Cloudeagle
 
 A simple Dropbox API Client implemented in Java using Maven.  
 This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a modular and reusable way.
@@ -8,9 +7,9 @@ This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a
 
 ## ✨ Features
 
-- 🔑 OAuth 2.0 Authorization with Dropbox
-- 🔐 Exchange Authorization Code for Access Token
-- 👥 Example API Call: List Team Members
+- 🔑 OAuth 2.0 Authorization with Dropbox  
+- 🔐 Exchange Authorization Code for Access Token  
+- 👥 Example API Call: List Team Members  
 - 🧩 OOP-based Restructure:
   - `DropBoxConfig` → Holds Dropbox App credentials (Client ID, Secret, Redirect URI)
   - `DropboxAuthService` → Manages authentication flows (Authorization URL, Token Exchange)
@@ -21,9 +20,9 @@ This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a
 
 ## ⚙️ Prerequisites
 
-- ☕ Java 17+ (recommended)
-- 🛠️ Maven 3.9+
-- 🌐 A Dropbox App (from [Dropbox Developer Console](https://www.dropbox.com/developers))
+- ☕ Java 17+ (recommended)  
+- 🛠️ Maven 3.9+  
+- 🌐 A Dropbox App (from [Dropbox Developer Console](https://www.dropbox.com/developers))  
 
 ---
 
@@ -34,8 +33,7 @@ This project demonstrates how to structure an OAuth 2.0 Dropbox integration in a
 ```bash
 git clone https://github.com/<your-username>/dropbox-api-client.git
 cd dropbox-api-client
-```
-````
+
 
 ### 2️⃣ Configure Dropbox App
 
